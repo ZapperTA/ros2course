@@ -1,0 +1,56 @@
+[0.396s] Invoking command in '/root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node': AMENT_PREFIX_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/opt/ros/jazzy LD_LIBRARY_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /root/ros2course/ch2-3-make-the-nodes-talk/src/talker_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node
+[0.502s] -- The C compiler identification is GNU 13.3.0
+[0.618s] -- The CXX compiler identification is GNU 13.3.0
+[0.654s] -- Detecting C compiler ABI info
+[0.850s] -- Detecting C compiler ABI info - done
+[0.866s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.867s] -- Detecting C compile features
+[0.868s] -- Detecting C compile features - done
+[0.883s] -- Detecting CXX compiler ABI info
+[1.068s] -- Detecting CXX compiler ABI info - done
+[1.081s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.081s] -- Detecting CXX compile features
+[1.082s] -- Detecting CXX compile features - done
+[1.087s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.372s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.651s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.717s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.786s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.817s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.845s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.881s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.012s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.019s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.174s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.205s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.244s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.362s] -- Found msg_package: 0.0.0 (/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake)
+[2.583s] -- Configuring done (2.2s)
+[2.612s] -- Generating done (0.0s)
+[2.619s] -- Build files have been written to: /root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node
+[2.639s] Invoked command in '/root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node' returned '0': AMENT_PREFIX_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/opt/ros/jazzy LD_LIBRARY_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /root/ros2course/ch2-3-make-the-nodes-talk/src/talker_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node
+[2.642s] Invoking command in '/root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node': AMENT_PREFIX_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/opt/ros/jazzy LD_LIBRARY_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node -- -j8 -l8
+[2.739s] [ 50%] [32mBuilding CXX object CMakeFiles/server_node.dir/src/server_node.cpp.o[0m
+[7.957s] [100%] [32m[1mLinking CXX executable server_node[0m
+[8.185s] [100%] Built target server_node
+[8.205s] Invoked command in '/root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node' returned '0': AMENT_PREFIX_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/opt/ros/jazzy LD_LIBRARY_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node -- -j8 -l8
+[8.208s] Invoking command in '/root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node': AMENT_PREFIX_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/opt/ros/jazzy LD_LIBRARY_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node
+[8.225s] -- Install configuration: ""
+[8.225s] -- Execute custom install script
+[8.228s] -- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/lib/talker_node/server_node
+[8.246s] -- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/ament_index/resource_index/package_run_dependencies/talker_node
+[8.262s] -- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/ament_index/resource_index/parent_prefix_path/talker_node
+[8.284s] -- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/environment/ament_prefix_path.sh
+[8.299s] -- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/environment/ament_prefix_path.dsv
+[8.315s] -- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/environment/path.sh
+[8.331s] -- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/environment/path.dsv
+[8.347s] -- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/local_setup.bash
+[8.363s] -- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/local_setup.sh
+[8.382s] -- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/local_setup.zsh
+[8.398s] -- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/local_setup.dsv
+[8.417s] -- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/package.dsv
+[8.436s] -- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/ament_index/resource_index/packages/talker_node
+[8.454s] -- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/cmake/talker_nodeConfig.cmake
+[8.472s] -- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/cmake/talker_nodeConfig-version.cmake
+[8.490s] -- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/package.xml
+[8.512s] Invoked command in '/root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node' returned '0': AMENT_PREFIX_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/opt/ros/jazzy LD_LIBRARY_PATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node

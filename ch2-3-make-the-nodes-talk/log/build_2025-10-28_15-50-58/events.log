@@ -1,0 +1,565 @@
+[0.000000] (-) TimerEvent: {}
+[0.000399] (listener_node) JobQueued: {'identifier': 'listener_node', 'dependencies': OrderedDict()}
+[0.001196] (msg_package) JobQueued: {'identifier': 'msg_package', 'dependencies': OrderedDict()}
+[0.001282] (broadcast_node) JobQueued: {'identifier': 'broadcast_node', 'dependencies': OrderedDict({'msg_package': '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package'})}
+[0.001331] (talker_node) JobQueued: {'identifier': 'talker_node', 'dependencies': OrderedDict({'msg_package': '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package'})}
+[0.001391] (msg_package) JobStarted: {'identifier': 'msg_package'}
+[0.012113] (listener_node) JobStarted: {'identifier': 'listener_node'}
+[0.030025] (msg_package) JobProgress: {'identifier': 'msg_package', 'progress': 'cmake'}
+[0.034941] (msg_package) Command: {'cmd': ['/usr/bin/cmake', '/root/ros2course/ch2-3-make-the-nodes-talk/src/msg_package', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package'], 'cwd': '/root/ros2course/ch2-3-make-the-nodes-talk/build/msg_package', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'HOSTNAME': 'a850ecd96ef8', 'GIT_ASKPASS': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root/ros2course', 'TERM_PROGRAM_VERSION': '1.105.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-09c6d427-bf71-4b5a-a62c-051321ecb2d5.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-2488fd0c-9d4d-45a4-9576-4bff0a40a7f7.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts', 'REMOTE_CONTAINERS_SOCKETS': '[]', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-854fea334dd6928c.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/89e1c946ca2914fc5cb0017200c1cef1/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-3ff268001c.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros2course/ch2-3-make-the-nodes-talk/build/msg_package', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/opt/ros/jazzy'}), 'shell': False}
+[0.099425] (-) TimerEvent: {}
+[0.135066] (msg_package) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199576] (-) TimerEvent: {}
+[0.233735] (msg_package) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.263239] (msg_package) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299746] (-) TimerEvent: {}
+[0.400191] (-) TimerEvent: {}
+[0.463541] (msg_package) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.478774] (msg_package) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.479158] (msg_package) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.479577] (msg_package) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.495084] (msg_package) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500290] (-) TimerEvent: {}
+[0.600669] (-) TimerEvent: {}
+[0.701101] (-) TimerEvent: {}
+[0.716050] (msg_package) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.745950] (msg_package) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.750034] (msg_package) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.750668] (msg_package) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.757463] (msg_package) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.801252] (-) TimerEvent: {}
+[0.901730] (-) TimerEvent: {}
+[1.002245] (-) TimerEvent: {}
+[1.085595] (msg_package) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.102379] (-) TimerEvent: {}
+[1.202789] (-) TimerEvent: {}
+[1.224472] (msg_package) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.280297] (msg_package) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[1.302933] (-) TimerEvent: {}
+[1.403397] (-) TimerEvent: {}
+[1.433691] (msg_package) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[1.502792] (msg_package) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.503548] (-) TimerEvent: {}
+[1.516388] (listener_node) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/root/ros2course/ch2-3-make-the-nodes-talk/build/listener_node/build', '--no-deps', 'symlink_data'], 'cwd': '/root/ros2course/ch2-3-make-the-nodes-talk/build/listener_node', 'env': {'PYTHON_BASIC_REPL': '1', 'HOSTNAME': 'a850ecd96ef8', 'GIT_ASKPASS': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root/ros2course', 'TERM_PROGRAM_VERSION': '1.105.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-09c6d427-bf71-4b5a-a62c-051321ecb2d5.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-2488fd0c-9d4d-45a4-9576-4bff0a40a7f7.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts', 'REMOTE_CONTAINERS_SOCKETS': '[]', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-854fea334dd6928c.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/89e1c946ca2914fc5cb0017200c1cef1/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-3ff268001c.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros2course/ch2-3-make-the-nodes-talk/build/listener_node', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/root/ros2course/ch2-3-make-the-nodes-talk/build/listener_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2course/ch2-3-make-the-nodes-talk/install/listener_node/lib/python3.12/site-packages:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.533415] (msg_package) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.558178] (msg_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.590259] (msg_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.603771] (-) TimerEvent: {}
+[1.670449] (msg_package) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[1.697372] (msg_package) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.703979] (-) TimerEvent: {}
+[1.804315] (-) TimerEvent: {}
+[1.904692] (-) TimerEvent: {}
+[2.005074] (-) TimerEvent: {}
+[2.021622] (listener_node) StdoutLine: {'line': b'running develop\n'}
+[2.105302] (-) TimerEvent: {}
+[2.205763] (-) TimerEvent: {}
+[2.306196] (-) TimerEvent: {}
+[2.340716] (listener_node) StdoutLine: {'line': b'running egg_info\n'}
+[2.340933] (listener_node) StdoutLine: {'line': b'creating listener_node.egg-info\n'}
+[2.364118] (listener_node) StdoutLine: {'line': b'writing listener_node.egg-info/PKG-INFO\n'}
+[2.364803] (listener_node) StdoutLine: {'line': b'writing dependency_links to listener_node.egg-info/dependency_links.txt\n'}
+[2.365132] (listener_node) StdoutLine: {'line': b'writing entry points to listener_node.egg-info/entry_points.txt\n'}
+[2.365417] (listener_node) StdoutLine: {'line': b'writing requirements to listener_node.egg-info/requires.txt\n'}
+[2.365659] (listener_node) StdoutLine: {'line': b'writing top-level names to listener_node.egg-info/top_level.txt\n'}
+[2.365992] (listener_node) StdoutLine: {'line': b"writing manifest file 'listener_node.egg-info/SOURCES.txt'\n"}
+[2.406304] (-) TimerEvent: {}
+[2.418902] (listener_node) StdoutLine: {'line': b"reading manifest file 'listener_node.egg-info/SOURCES.txt'\n"}
+[2.420663] (listener_node) StdoutLine: {'line': b"writing manifest file 'listener_node.egg-info/SOURCES.txt'\n"}
+[2.448112] (listener_node) StdoutLine: {'line': b'running build_ext\n'}
+[2.448565] (listener_node) StdoutLine: {'line': b'Creating /root/ros2course/ch2-3-make-the-nodes-talk/install/listener_node/lib/python3.12/site-packages/listener-node.egg-link (link to .)\n'}
+[2.449281] (listener_node) StdoutLine: {'line': b'Installing listener script to /root/ros2course/ch2-3-make-the-nodes-talk/install/listener_node/lib/listener_node\n'}
+[2.450277] (listener_node) StdoutLine: {'line': b'Installing service_client script to /root/ros2course/ch2-3-make-the-nodes-talk/install/listener_node/lib/listener_node\n'}
+[2.450873] (listener_node) StdoutLine: {'line': b'\n'}
+[2.451081] (listener_node) StdoutLine: {'line': b'Installed /root/ros2course/ch2-3-make-the-nodes-talk/build/listener_node\n'}
+[2.451449] (listener_node) StdoutLine: {'line': b'running symlink_data\n'}
+[2.451599] (listener_node) StdoutLine: {'line': b'creating /root/ros2course/ch2-3-make-the-nodes-talk/install/listener_node/share/ament_index\n'}
+[2.451997] (listener_node) StdoutLine: {'line': b'creating /root/ros2course/ch2-3-make-the-nodes-talk/install/listener_node/share/ament_index/resource_index\n'}
+[2.452563] (listener_node) StdoutLine: {'line': b'creating /root/ros2course/ch2-3-make-the-nodes-talk/install/listener_node/share/ament_index/resource_index/packages\n'}
+[2.453127] (listener_node) StdoutLine: {'line': b'symbolically linking /root/ros2course/ch2-3-make-the-nodes-talk/build/listener_node/resource/listener_node -> /root/ros2course/ch2-3-make-the-nodes-talk/install/listener_node/share/ament_index/resource_index/packages\n'}
+[2.453965] (listener_node) StdoutLine: {'line': b'symbolically linking /root/ros2course/ch2-3-make-the-nodes-talk/build/listener_node/package.xml -> /root/ros2course/ch2-3-make-the-nodes-talk/install/listener_node/share/listener_node\n'}
+[2.500107] (listener_node) CommandEnded: {'returncode': 0}
+[2.506474] (-) TimerEvent: {}
+[2.520607] (listener_node) JobEnded: {'identifier': 'listener_node', 'rc': 0}
+[2.533231] (msg_package) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[2.606625] (-) TimerEvent: {}
+[2.707092] (-) TimerEvent: {}
+[2.807459] (-) TimerEvent: {}
+[2.907865] (-) TimerEvent: {}
+[3.008375] (-) TimerEvent: {}
+[3.108908] (-) TimerEvent: {}
+[3.209300] (-) TimerEvent: {}
+[3.309728] (-) TimerEvent: {}
+[3.410197] (-) TimerEvent: {}
+[3.510548] (-) TimerEvent: {}
+[3.610914] (-) TimerEvent: {}
+[3.711289] (-) TimerEvent: {}
+[3.811777] (-) TimerEvent: {}
+[3.887650] (msg_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.912001] (-) TimerEvent: {}
+[4.012363] (-) TimerEvent: {}
+[4.112777] (-) TimerEvent: {}
+[4.213175] (-) TimerEvent: {}
+[4.313567] (-) TimerEvent: {}
+[4.390839] (msg_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.395454] (msg_package) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[4.413767] (-) TimerEvent: {}
+[4.514164] (-) TimerEvent: {}
+[4.593479] (msg_package) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[4.614342] (-) TimerEvent: {}
+[4.714714] (-) TimerEvent: {}
+[4.815267] (-) TimerEvent: {}
+[4.915798] (-) TimerEvent: {}
+[5.016428] (-) TimerEvent: {}
+[5.116807] (-) TimerEvent: {}
+[5.217228] (-) TimerEvent: {}
+[5.234661] (msg_package) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[5.317376] (-) TimerEvent: {}
+[5.339865] (msg_package) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.342264] (msg_package) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.355193] (msg_package) StdoutLine: {'line': b'-- Configuring done (5.3s)\n'}
+[5.417505] (-) TimerEvent: {}
+[5.461225] (msg_package) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[5.477923] (msg_package) StdoutLine: {'line': b'-- Build files have been written to: /root/ros2course/ch2-3-make-the-nodes-talk/build/msg_package\n'}
+[5.489233] (msg_package) CommandEnded: {'returncode': 0}
+[5.490589] (msg_package) JobProgress: {'identifier': 'msg_package', 'progress': 'build'}
+[5.492201] (msg_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2course/ch2-3-make-the-nodes-talk/build/msg_package', '--', '-j8', '-l8'], 'cwd': '/root/ros2course/ch2-3-make-the-nodes-talk/build/msg_package', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'HOSTNAME': 'a850ecd96ef8', 'GIT_ASKPASS': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root/ros2course', 'TERM_PROGRAM_VERSION': '1.105.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-09c6d427-bf71-4b5a-a62c-051321ecb2d5.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-2488fd0c-9d4d-45a4-9576-4bff0a40a7f7.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts', 'REMOTE_CONTAINERS_SOCKETS': '[]', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-854fea334dd6928c.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/89e1c946ca2914fc5cb0017200c1cef1/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-3ff268001c.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros2course/ch2-3-make-the-nodes-talk/build/msg_package', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/opt/ros/jazzy'}), 'shell': False}
+[5.517746] (-) TimerEvent: {}
+[5.575714] (msg_package) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[5.591854] (msg_package) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_symlink_msg_package\n'}
+[5.617890] (-) TimerEvent: {}
+[5.718274] (-) TimerEvent: {}
+[5.818689] (-) TimerEvent: {}
+[5.860462] (msg_package) StdoutLine: {'line': b'[  2%] Built target msg_package__rosidl_generator_type_description\n'}
+[5.880608] (msg_package) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.893301] (msg_package) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[5.912916] (msg_package) StdoutLine: {'line': b'running egg_info\n'}
+[5.914696] (msg_package) StdoutLine: {'line': b'creating msg_package.egg-info\n'}
+[5.918822] (-) TimerEvent: {}
+[5.945913] (msg_package) StdoutLine: {'line': b'writing msg_package.egg-info/PKG-INFO\n'}
+[5.946262] (msg_package) StdoutLine: {'line': b'writing dependency_links to msg_package.egg-info/dependency_links.txt\n'}
+[5.946515] (msg_package) StdoutLine: {'line': b'writing top-level names to msg_package.egg-info/top_level.txt\n'}
+[5.946793] (msg_package) StdoutLine: {'line': b"writing manifest file 'msg_package.egg-info/SOURCES.txt'\n"}
+[6.019017] (-) TimerEvent: {}
+[6.045818] (msg_package) StdoutLine: {'line': b"reading manifest file 'msg_package.egg-info/SOURCES.txt'\n"}
+[6.046664] (msg_package) StdoutLine: {'line': b"writing manifest file 'msg_package.egg-info/SOURCES.txt'\n"}
+[6.088354] (msg_package) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_msg_package_egg\n'}
+[6.119149] (-) TimerEvent: {}
+[6.219517] (-) TimerEvent: {}
+[6.316894] (msg_package) StdoutLine: {'line': b'[  6%] Built target msg_package__cpp\n'}
+[6.319610] (-) TimerEvent: {}
+[6.427964] (-) TimerEvent: {}
+[6.432610] (msg_package) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/msg_package__rosidl_generator_c.dir/rosidl_generator_c/msg_package/msg/detail/broadcast__description.c.o\x1b[0m\n'}
+[6.432986] (msg_package) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/msg_package__rosidl_generator_c.dir/rosidl_generator_c/msg_package/msg/detail/broadcast__type_support.c.o\x1b[0m\n'}
+[6.434135] (msg_package) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/msg_package__rosidl_generator_c.dir/rosidl_generator_c/msg_package/msg/detail/broadcast__functions.c.o\x1b[0m\n'}
+[6.439419] (msg_package) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/msg_package__rosidl_generator_c.dir/rosidl_generator_c/msg_package/srv/detail/transmit__description.c.o\x1b[0m\n'}
+[6.445707] (msg_package) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/msg_package__rosidl_generator_c.dir/rosidl_generator_c/msg_package/srv/detail/transmit__functions.c.o\x1b[0m\n'}
+[6.454384] (msg_package) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/msg_package__rosidl_generator_c.dir/rosidl_generator_c/msg_package/srv/detail/transmit__type_support.c.o\x1b[0m\n'}
+[6.528391] (-) TimerEvent: {}
+[6.601629] (msg_package) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libmsg_package__rosidl_generator_c.so\x1b[0m\n'}
+[6.628529] (-) TimerEvent: {}
+[6.663552] (msg_package) StdoutLine: {'line': b'[ 22%] Built target msg_package__rosidl_generator_c\n'}
+[6.681828] (msg_package) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.682181] (msg_package) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.682371] (msg_package) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.682593] (msg_package) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.686069] (msg_package) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[6.686375] (msg_package) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.728733] (-) TimerEvent: {}
+[6.829119] (-) TimerEvent: {}
+[6.929588] (-) TimerEvent: {}
+[7.030185] (-) TimerEvent: {}
+[7.132074] (-) TimerEvent: {}
+[7.144004] (msg_package) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/msg_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/msg_package/msg/broadcast__type_support.cpp.o\x1b[0m\n'}
+[7.147964] (msg_package) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/msg_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/msg_package/msg/broadcast__type_support.cpp.o\x1b[0m\n'}
+[7.168172] (msg_package) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/msg_package__rosidl_typesupport_c.dir/rosidl_typesupport_c/msg_package/srv/transmit__type_support.cpp.o\x1b[0m\n'}
+[7.170981] (msg_package) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/msg_package__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/msg_package/srv/transmit__type_support.cpp.o\x1b[0m\n'}
+[7.198463] (msg_package) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/msg_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/msg_package/msg/detail/broadcast__type_support.cpp.o\x1b[0m\n'}
+[7.234649] (-) TimerEvent: {}
+[7.259970] (msg_package) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/msg_package__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/msg_package/srv/detail/transmit__type_support.cpp.o\x1b[0m\n'}
+[7.269111] (msg_package) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/msg_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/msg_package/msg/detail/broadcast__type_support.c.o\x1b[0m\n'}
+[7.320064] (msg_package) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libmsg_package__rosidl_typesupport_c.so\x1b[0m\n'}
+[7.334803] (-) TimerEvent: {}
+[7.366449] (msg_package) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/msg_package__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/msg_package/srv/detail/transmit__type_support.c.o\x1b[0m\n'}
+[7.371758] (msg_package) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/msg_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/msg_package/msg/detail/dds_fastrtps/broadcast__type_support.cpp.o\x1b[0m\n'}
+[7.388112] (msg_package) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/msg_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/msg_package/msg/detail/broadcast__type_support_c.cpp.o\x1b[0m\n'}
+[7.424556] (msg_package) StdoutLine: {'line': b'[ 61%] Built target msg_package__rosidl_typesupport_c\n'}
+[7.437995] (-) TimerEvent: {}
+[7.443470] (msg_package) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/msg_package__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/msg_package/srv/detail/transmit__type_support_c.cpp.o\x1b[0m\n'}
+[7.486647] (msg_package) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking C shared library libmsg_package__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[7.538157] (-) TimerEvent: {}
+[7.573761] (msg_package) StdoutLine: {'line': b'[ 65%] Built target msg_package__rosidl_typesupport_introspection_c\n'}
+[7.595997] (msg_package) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/msg_package__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/msg_package/srv/detail/dds_fastrtps/transmit__type_support.cpp.o\x1b[0m\n'}
+[7.639652] (-) TimerEvent: {}
+[7.740175] (-) TimerEvent: {}
+[7.840707] (-) TimerEvent: {}
+[7.941247] (-) TimerEvent: {}
+[8.041678] (-) TimerEvent: {}
+[8.135155] (msg_package) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libmsg_package__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[8.141826] (-) TimerEvent: {}
+[8.187749] (msg_package) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libmsg_package__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[8.242007] (-) TimerEvent: {}
+[8.300791] (msg_package) StdoutLine: {'line': b'[ 72%] Built target msg_package__rosidl_typesupport_cpp\n'}
+[8.342152] (-) TimerEvent: {}
+[8.351213] (msg_package) StdoutLine: {'line': b'[ 72%] Built target msg_package__rosidl_typesupport_introspection_cpp\n'}
+[8.442310] (-) TimerEvent: {}
+[8.533976] (msg_package) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libmsg_package__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[8.542447] (-) TimerEvent: {}
+[8.627690] (msg_package) StdoutLine: {'line': b'[ 75%] Built target msg_package__rosidl_typesupport_fastrtps_c\n'}
+[8.642591] (-) TimerEvent: {}
+[8.774925] (-) TimerEvent: {}
+[8.808053] (msg_package) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libmsg_package__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[8.875113] (-) TimerEvent: {}
+[8.938749] (msg_package) StdoutLine: {'line': b'[ 77%] Built target msg_package__rosidl_typesupport_fastrtps_cpp\n'}
+[8.975349] (-) TimerEvent: {}
+[8.977286] (msg_package) StdoutLine: {'line': b'[ 77%] Built target msg_package\n'}
+[9.015403] (msg_package) StdoutLine: {'line': b'[ 79%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[9.075557] (-) TimerEvent: {}
+[9.175946] (-) TimerEvent: {}
+[9.276313] (-) TimerEvent: {}
+[9.376763] (-) TimerEvent: {}
+[9.477263] (-) TimerEvent: {}
+[9.577664] (-) TimerEvent: {}
+[9.619373] (msg_package) StdoutLine: {'line': b'[ 79%] Built target msg_package__py\n'}
+[9.653987] (msg_package) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/msg_package__rosidl_generator_py.dir/rosidl_generator_py/msg_package/msg/_broadcast_s.c.o\x1b[0m\n'}
+[9.654222] (msg_package) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/msg_package__rosidl_generator_py.dir/rosidl_generator_py/msg_package/srv/_transmit_s.c.o\x1b[0m\n'}
+[9.677801] (-) TimerEvent: {}
+[9.778168] (-) TimerEvent: {}
+[9.878692] (-) TimerEvent: {}
+[9.949798] (msg_package) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C shared library libmsg_package__rosidl_generator_py.so\x1b[0m\n'}
+[9.978863] (-) TimerEvent: {}
+[10.038924] (msg_package) StdoutLine: {'line': b'[ 86%] Built target msg_package__rosidl_generator_py\n'}
+[10.076018] (msg_package) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/msg_package_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/msg_package/_msg_package_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[10.078062] (msg_package) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/msg_package_s__rosidl_typesupport_c.dir/rosidl_generator_py/msg_package/_msg_package_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[10.078997] (-) TimerEvent: {}
+[10.081559] (msg_package) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/msg_package_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/msg_package/_msg_package_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[10.179200] (-) TimerEvent: {}
+[10.281754] (-) TimerEvent: {}
+[10.323790] (msg_package) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/msg_package/msg_package_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.325807] (msg_package) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/msg_package/msg_package_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[10.370897] (msg_package) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/msg_package/msg_package_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.381894] (-) TimerEvent: {}
+[10.425630] (msg_package) StdoutLine: {'line': b'[100%] Built target msg_package_s__rosidl_typesupport_c\n'}
+[10.427976] (msg_package) StdoutLine: {'line': b'[100%] Built target msg_package_s__rosidl_typesupport_introspection_c\n'}
+[10.449223] (msg_package) StdoutLine: {'line': b'[100%] Built target msg_package_s__rosidl_typesupport_fastrtps_c\n'}
+[10.475005] (msg_package) CommandEnded: {'returncode': 0}
+[10.476338] (msg_package) JobProgress: {'identifier': 'msg_package', 'progress': 'install'}
+[10.482088] (-) TimerEvent: {}
+[10.495277] (msg_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros2course/ch2-3-make-the-nodes-talk/build/msg_package'], 'cwd': '/root/ros2course/ch2-3-make-the-nodes-talk/build/msg_package', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'HOSTNAME': 'a850ecd96ef8', 'GIT_ASKPASS': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root/ros2course', 'TERM_PROGRAM_VERSION': '1.105.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-09c6d427-bf71-4b5a-a62c-051321ecb2d5.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-2488fd0c-9d4d-45a4-9576-4bff0a40a7f7.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts', 'REMOTE_CONTAINERS_SOCKETS': '[]', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-854fea334dd6928c.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/89e1c946ca2914fc5cb0017200c1cef1/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-3ff268001c.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros2course/ch2-3-make-the-nodes-talk/build/msg_package', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/opt/ros/jazzy'}), 'shell': False}
+[10.512583] (msg_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.513424] (msg_package) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[10.516235] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/ament_index/resource_index/rosidl_interfaces/msg_package\n'}
+[10.535976] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/msg/Broadcast.json\n'}
+[10.553211] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/srv/Transmit.json\n'}
+[10.572340] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/broadcast.h\n'}
+[10.582218] (-) TimerEvent: {}
+[10.590626] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/detail/broadcast__functions.h\n'}
+[10.609688] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/detail/broadcast__struct.h\n'}
+[10.625817] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/detail/broadcast__type_support.h\n'}
+[10.644145] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/rosidl_generator_c__visibility_control.h\n'}
+[10.664674] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/srv/detail/transmit__functions.h\n'}
+[10.682402] (-) TimerEvent: {}
+[10.687991] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/srv/detail/transmit__struct.h\n'}
+[10.710991] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/srv/detail/transmit__type_support.h\n'}
+[10.733021] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/srv/transmit.h\n'}
+[10.754721] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/environment/library_path.sh\n'}
+[10.775500] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/environment/library_path.dsv\n'}
+[10.782569] (-) TimerEvent: {}
+[10.797577] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/detail/broadcast__rosidl_typesupport_fastrtps_c.h\n'}
+[10.822103] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[10.857108] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/srv/detail/transmit__rosidl_typesupport_fastrtps_c.h\n'}
+[10.882805] (-) TimerEvent: {}
+[10.891012] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/broadcast.hpp\n'}
+[10.921561] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/detail/broadcast__builder.hpp\n'}
+[10.938194] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/detail/broadcast__struct.hpp\n'}
+[10.955034] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/detail/broadcast__traits.hpp\n'}
+[10.973726] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/detail/broadcast__type_support.hpp\n'}
+[10.982963] (-) TimerEvent: {}
+[10.994901] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[11.013962] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/srv/detail/transmit__builder.hpp\n'}
+[11.030969] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/srv/detail/transmit__struct.hpp\n'}
+[11.048091] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/srv/detail/transmit__traits.hpp\n'}
+[11.064619] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/srv/detail/transmit__type_support.hpp\n'}
+[11.080478] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/srv/transmit.hpp\n'}
+[11.083092] (-) TimerEvent: {}
+[11.100501] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/detail/broadcast__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.116829] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[11.130549] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/srv/detail/transmit__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.145060] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/detail/broadcast__rosidl_typesupport_introspection_c.h\n'}
+[11.161204] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[11.174830] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/srv/detail/transmit__rosidl_typesupport_introspection_c.h\n'}
+[11.183275] (-) TimerEvent: {}
+[11.189060] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/msg/detail/broadcast__rosidl_typesupport_introspection_cpp.hpp\n'}
+[11.206551] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/include/msg_package/msg_package/srv/detail/transmit__rosidl_typesupport_introspection_cpp.hpp\n'}
+[11.221245] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/environment/pythonpath.sh\n'}
+[11.236871] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/environment/pythonpath.dsv\n'}
+[11.254802] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[11.270408] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[11.283336] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[11.283630] (-) TimerEvent: {}
+[11.300327] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[11.318415] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/__init__.py\n'}
+[11.337765] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/_msg_package_s.ep.rosidl_typesupport_c.c\n'}
+[11.355862] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/_msg_package_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[11.372893] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/_msg_package_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[11.383789] (-) TimerEvent: {}
+[11.388270] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/msg/__init__.py\n'}
+[11.404808] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/msg/_broadcast.py\n'}
+[11.419326] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/msg/_broadcast_s.c\n'}
+[11.433284] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/msg_package_s__rosidl_typesupport_c.so\n'}
+[11.446267] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/msg_package_s__rosidl_typesupport_fastrtps_c.so\n'}
+[11.463675] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/msg_package_s__rosidl_typesupport_introspection_c.so\n'}
+[11.477833] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/srv/__init__.py\n'}
+[11.483909] (-) TimerEvent: {}
+[11.491561] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/srv/_transmit.py\n'}
+[11.511616] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/srv/_transmit_s.c\n'}
+[11.526068] (msg_package) StdoutLine: {'line': b'-- Up-to-date symlink: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/msg_package_s__rosidl_typesupport_fastrtps_c.so\n'}
+[11.526861] (msg_package) StdoutLine: {'line': b'-- Up-to-date symlink: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/msg_package_s__rosidl_typesupport_introspection_c.so\n'}
+[11.527637] (msg_package) StdoutLine: {'line': b'-- Up-to-date symlink: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/msg_package_s__rosidl_typesupport_c.so\n'}
+[11.528077] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/msg/Broadcast.idl\n'}
+[11.544473] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/srv/Transmit.idl\n'}
+[11.562246] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/msg/Broadcast.msg\n'}
+[11.575045] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/srv/Transmit.srv\n'}
+[11.584029] (-) TimerEvent: {}
+[11.591850] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/ament_index/resource_index/package_run_dependencies/msg_package\n'}
+[11.611101] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/ament_index/resource_index/parent_prefix_path/msg_package\n'}
+[11.627105] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/environment/ament_prefix_path.sh\n'}
+[11.641954] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/environment/ament_prefix_path.dsv\n'}
+[11.657842] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/environment/path.sh\n'}
+[11.672981] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/environment/path.dsv\n'}
+[11.684132] (-) TimerEvent: {}
+[11.686675] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/local_setup.bash\n'}
+[11.704533] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/local_setup.sh\n'}
+[11.718274] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/local_setup.zsh\n'}
+[11.732580] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/local_setup.dsv\n'}
+[11.749185] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/package.dsv\n'}
+[11.764965] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/ament_index/resource_index/packages/msg_package\n'}
+[11.779121] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/rosidl_cmake-extras.cmake\n'}
+[11.784262] (-) TimerEvent: {}
+[11.793985] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[11.812162] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[11.825796] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[11.842319] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[11.858282] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[11.873032] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[11.884469] (-) TimerEvent: {}
+[11.885640] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/msg_packageConfig.cmake\n'}
+[11.903112] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/msg_packageConfig-version.cmake\n'}
+[11.918997] (msg_package) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/package.xml\n'}
+[11.932852] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/libmsg_package__rosidl_generator_c.so\n'}
+[11.933695] (msg_package) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/libmsg_package__rosidl_generator_c.so" to ""\n'}
+[11.933980] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/libmsg_package__rosidl_typesupport_fastrtps_c.so\n'}
+[11.934796] (msg_package) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/libmsg_package__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[11.934920] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/libmsg_package__rosidl_typesupport_fastrtps_cpp.so\n'}
+[11.935733] (msg_package) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/libmsg_package__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[11.936210] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/libmsg_package__rosidl_typesupport_introspection_c.so\n'}
+[11.936691] (msg_package) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/libmsg_package__rosidl_typesupport_introspection_c.so" to ""\n'}
+[11.937054] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/libmsg_package__rosidl_typesupport_c.so\n'}
+[11.937545] (msg_package) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/libmsg_package__rosidl_typesupport_c.so" to ""\n'}
+[11.937928] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/libmsg_package__rosidl_typesupport_introspection_cpp.so\n'}
+[11.938937] (msg_package) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/libmsg_package__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[11.939270] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/libmsg_package__rosidl_typesupport_cpp.so\n'}
+[11.940136] (msg_package) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/libmsg_package__rosidl_typesupport_cpp.so" to ""\n'}
+[11.984637] (-) TimerEvent: {}
+[11.998554] (msg_package) StdoutLine: {'line': b"Listing '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package'...\n"}
+[11.998917] (msg_package) StdoutLine: {'line': b"Compiling '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/__init__.py'...\n"}
+[11.999066] (msg_package) StdoutLine: {'line': b"Listing '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/msg'...\n"}
+[11.999271] (msg_package) StdoutLine: {'line': b"Compiling '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/msg/__init__.py'...\n"}
+[11.999456] (msg_package) StdoutLine: {'line': b"Compiling '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/msg/_broadcast.py'...\n"}
+[11.999608] (msg_package) StdoutLine: {'line': b"Listing '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/srv'...\n"}
+[11.999840] (msg_package) StdoutLine: {'line': b"Compiling '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/srv/__init__.py'...\n"}
+[12.000051] (msg_package) StdoutLine: {'line': b"Compiling '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages/msg_package/srv/_transmit.py'...\n"}
+[12.008346] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/libmsg_package__rosidl_generator_py.so\n'}
+[12.009391] (msg_package) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/libmsg_package__rosidl_generator_py.so" to ""\n'}
+[12.009743] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/export_msg_package__rosidl_generator_cExport.cmake\n'}
+[12.010019] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/export_msg_package__rosidl_generator_cExport-noconfig.cmake\n'}
+[12.010456] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/export_msg_package__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[12.010733] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/export_msg_package__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[12.011143] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/export_msg_package__rosidl_generator_cppExport.cmake\n'}
+[12.011535] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/export_msg_package__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[12.011937] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/export_msg_package__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[12.012358] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/msg_package__rosidl_typesupport_introspection_cExport.cmake\n'}
+[12.012781] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/msg_package__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[12.013200] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/msg_package__rosidl_typesupport_cExport.cmake\n'}
+[12.013438] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/msg_package__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[12.013801] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/msg_package__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[12.014191] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/msg_package__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[12.014569] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/msg_package__rosidl_typesupport_cppExport.cmake\n'}
+[12.014915] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/msg_package__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[12.015242] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/export_msg_package__rosidl_generator_pyExport.cmake\n'}
+[12.015581] (msg_package) StdoutLine: {'line': b'-- Installing: /root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake/export_msg_package__rosidl_generator_pyExport-noconfig.cmake\n'}
+[12.019015] (msg_package) CommandEnded: {'returncode': 0}
+[12.047635] (msg_package) JobEnded: {'identifier': 'msg_package', 'rc': 0}
+[12.048329] (broadcast_node) JobStarted: {'identifier': 'broadcast_node'}
+[12.058657] (talker_node) JobStarted: {'identifier': 'talker_node'}
+[12.084772] (-) TimerEvent: {}
+[12.185158] (-) TimerEvent: {}
+[12.285561] (-) TimerEvent: {}
+[12.385961] (-) TimerEvent: {}
+[12.450248] (talker_node) JobProgress: {'identifier': 'talker_node', 'progress': 'cmake'}
+[12.452594] (talker_node) Command: {'cmd': ['/usr/bin/cmake', '/root/ros2course/ch2-3-make-the-nodes-talk/src/talker_node', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node'], 'cwd': '/root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'HOSTNAME': 'a850ecd96ef8', 'GIT_ASKPASS': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root/ros2course', 'TERM_PROGRAM_VERSION': '1.105.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-09c6d427-bf71-4b5a-a62c-051321ecb2d5.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-2488fd0c-9d4d-45a4-9576-4bff0a40a7f7.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts', 'REMOTE_CONTAINERS_SOCKETS': '[]', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-854fea334dd6928c.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/89e1c946ca2914fc5cb0017200c1cef1/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-3ff268001c.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/opt/ros/jazzy'}), 'shell': False}
+[12.486120] (-) TimerEvent: {}
+[12.560381] (talker_node) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[12.586264] (-) TimerEvent: {}
+[12.676279] (talker_node) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[12.686395] (-) TimerEvent: {}
+[12.712402] (talker_node) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[12.786545] (-) TimerEvent: {}
+[12.887016] (-) TimerEvent: {}
+[12.908095] (talker_node) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[12.924740] (talker_node) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[12.925249] (talker_node) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[12.926046] (talker_node) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[12.941857] (talker_node) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[12.987164] (-) TimerEvent: {}
+[13.087560] (-) TimerEvent: {}
+[13.126556] (talker_node) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[13.139420] (talker_node) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[13.139729] (talker_node) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[13.140658] (talker_node) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[13.145877] (talker_node) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[13.187717] (-) TimerEvent: {}
+[13.288197] (-) TimerEvent: {}
+[13.388640] (-) TimerEvent: {}
+[13.429938] (talker_node) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[13.488799] (-) TimerEvent: {}
+[13.589527] (-) TimerEvent: {}
+[13.656282] (broadcast_node) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/root/ros2course/ch2-3-make-the-nodes-talk/build/broadcast_node/build', '--no-deps', 'symlink_data'], 'cwd': '/root/ros2course/ch2-3-make-the-nodes-talk/build/broadcast_node', 'env': {'PYTHON_BASIC_REPL': '1', 'HOSTNAME': 'a850ecd96ef8', 'GIT_ASKPASS': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root/ros2course', 'TERM_PROGRAM_VERSION': '1.105.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-09c6d427-bf71-4b5a-a62c-051321ecb2d5.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-2488fd0c-9d4d-45a4-9576-4bff0a40a7f7.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts', 'REMOTE_CONTAINERS_SOCKETS': '[]', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-854fea334dd6928c.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/89e1c946ca2914fc5cb0017200c1cef1/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-3ff268001c.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros2course/ch2-3-make-the-nodes-talk/build/broadcast_node', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/root/ros2course/ch2-3-make-the-nodes-talk/build/broadcast_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2course/ch2-3-make-the-nodes-talk/install/broadcast_node/lib/python3.12/site-packages:/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[13.689700] (-) TimerEvent: {}
+[13.708992] (talker_node) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[13.775990] (talker_node) StdoutLine: {'line': b'-- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[13.789811] (-) TimerEvent: {}
+[13.844367] (talker_node) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[13.875082] (talker_node) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[13.889979] (-) TimerEvent: {}
+[13.903195] (talker_node) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[13.939548] (talker_node) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[13.990139] (-) TimerEvent: {}
+[14.070594] (talker_node) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[14.077853] (talker_node) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[14.090306] (-) TimerEvent: {}
+[14.190702] (-) TimerEvent: {}
+[14.192754] (broadcast_node) StdoutLine: {'line': b'running develop\n'}
+[14.232509] (talker_node) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[14.263859] (talker_node) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[14.290839] (-) TimerEvent: {}
+[14.302160] (talker_node) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[14.390999] (-) TimerEvent: {}
+[14.420478] (talker_node) StdoutLine: {'line': b'-- Found msg_package: 0.0.0 (/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/share/msg_package/cmake)\n'}
+[14.491147] (-) TimerEvent: {}
+[14.497124] (broadcast_node) StdoutLine: {'line': b'running egg_info\n'}
+[14.497358] (broadcast_node) StdoutLine: {'line': b'creating broadcast_node.egg-info\n'}
+[14.528700] (broadcast_node) StdoutLine: {'line': b'writing broadcast_node.egg-info/PKG-INFO\n'}
+[14.529223] (broadcast_node) StdoutLine: {'line': b'writing dependency_links to broadcast_node.egg-info/dependency_links.txt\n'}
+[14.529560] (broadcast_node) StdoutLine: {'line': b'writing entry points to broadcast_node.egg-info/entry_points.txt\n'}
+[14.530004] (broadcast_node) StdoutLine: {'line': b'writing requirements to broadcast_node.egg-info/requires.txt\n'}
+[14.530198] (broadcast_node) StdoutLine: {'line': b'writing top-level names to broadcast_node.egg-info/top_level.txt\n'}
+[14.531012] (broadcast_node) StdoutLine: {'line': b"writing manifest file 'broadcast_node.egg-info/SOURCES.txt'\n"}
+[14.584904] (broadcast_node) StdoutLine: {'line': b"reading manifest file 'broadcast_node.egg-info/SOURCES.txt'\n"}
+[14.585738] (broadcast_node) StdoutLine: {'line': b"writing manifest file 'broadcast_node.egg-info/SOURCES.txt'\n"}
+[14.591274] (-) TimerEvent: {}
+[14.619623] (broadcast_node) StdoutLine: {'line': b'running build_ext\n'}
+[14.619877] (broadcast_node) StdoutLine: {'line': b'Creating /root/ros2course/ch2-3-make-the-nodes-talk/install/broadcast_node/lib/python3.12/site-packages/broadcast-node.egg-link (link to .)\n'}
+[14.620851] (broadcast_node) StdoutLine: {'line': b'Installing broadcast script to /root/ros2course/ch2-3-make-the-nodes-talk/install/broadcast_node/lib/broadcast_node\n'}
+[14.621957] (broadcast_node) StdoutLine: {'line': b'\n'}
+[14.622310] (broadcast_node) StdoutLine: {'line': b'Installed /root/ros2course/ch2-3-make-the-nodes-talk/build/broadcast_node\n'}
+[14.622657] (broadcast_node) StdoutLine: {'line': b'running symlink_data\n'}
+[14.622912] (broadcast_node) StdoutLine: {'line': b'creating /root/ros2course/ch2-3-make-the-nodes-talk/install/broadcast_node/share/ament_index\n'}
+[14.623269] (broadcast_node) StdoutLine: {'line': b'creating /root/ros2course/ch2-3-make-the-nodes-talk/install/broadcast_node/share/ament_index/resource_index\n'}
+[14.623417] (broadcast_node) StdoutLine: {'line': b'creating /root/ros2course/ch2-3-make-the-nodes-talk/install/broadcast_node/share/ament_index/resource_index/packages\n'}
+[14.623819] (broadcast_node) StdoutLine: {'line': b'symbolically linking /root/ros2course/ch2-3-make-the-nodes-talk/build/broadcast_node/resource/broadcast_node -> /root/ros2course/ch2-3-make-the-nodes-talk/install/broadcast_node/share/ament_index/resource_index/packages\n'}
+[14.624879] (broadcast_node) StdoutLine: {'line': b'symbolically linking /root/ros2course/ch2-3-make-the-nodes-talk/build/broadcast_node/package.xml -> /root/ros2course/ch2-3-make-the-nodes-talk/install/broadcast_node/share/broadcast_node\n'}
+[14.641828] (talker_node) StdoutLine: {'line': b'-- Configuring done (2.2s)\n'}
+[14.670969] (talker_node) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[14.673035] (broadcast_node) CommandEnded: {'returncode': 0}
+[14.677215] (talker_node) StdoutLine: {'line': b'-- Build files have been written to: /root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node\n'}
+[14.689610] (broadcast_node) JobEnded: {'identifier': 'broadcast_node', 'rc': 0}
+[14.691389] (-) TimerEvent: {}
+[14.696933] (talker_node) CommandEnded: {'returncode': 0}
+[14.699154] (talker_node) JobProgress: {'identifier': 'talker_node', 'progress': 'build'}
+[14.699265] (talker_node) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node', '--', '-j8', '-l8'], 'cwd': '/root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'HOSTNAME': 'a850ecd96ef8', 'GIT_ASKPASS': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root/ros2course', 'TERM_PROGRAM_VERSION': '1.105.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-09c6d427-bf71-4b5a-a62c-051321ecb2d5.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-2488fd0c-9d4d-45a4-9576-4bff0a40a7f7.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts', 'REMOTE_CONTAINERS_SOCKETS': '[]', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-854fea334dd6928c.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/89e1c946ca2914fc5cb0017200c1cef1/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-3ff268001c.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/opt/ros/jazzy'}), 'shell': False}
+[14.791608] (-) TimerEvent: {}
+[14.797316] (talker_node) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/server_node.dir/src/server_node.cpp.o\x1b[0m\n'}
+[14.891838] (-) TimerEvent: {}
+[14.992394] (-) TimerEvent: {}
+[15.092854] (-) TimerEvent: {}
+[15.193332] (-) TimerEvent: {}
+[15.293825] (-) TimerEvent: {}
+[15.394489] (-) TimerEvent: {}
+[15.495144] (-) TimerEvent: {}
+[15.595560] (-) TimerEvent: {}
+[15.696063] (-) TimerEvent: {}
+[15.796468] (-) TimerEvent: {}
+[15.896909] (-) TimerEvent: {}
+[15.997351] (-) TimerEvent: {}
+[16.097822] (-) TimerEvent: {}
+[16.198272] (-) TimerEvent: {}
+[16.298684] (-) TimerEvent: {}
+[16.399163] (-) TimerEvent: {}
+[16.499632] (-) TimerEvent: {}
+[16.600105] (-) TimerEvent: {}
+[16.700565] (-) TimerEvent: {}
+[16.800953] (-) TimerEvent: {}
+[16.901507] (-) TimerEvent: {}
+[17.002039] (-) TimerEvent: {}
+[17.102432] (-) TimerEvent: {}
+[17.202844] (-) TimerEvent: {}
+[17.303290] (-) TimerEvent: {}
+[17.403729] (-) TimerEvent: {}
+[17.504211] (-) TimerEvent: {}
+[17.604648] (-) TimerEvent: {}
+[17.705108] (-) TimerEvent: {}
+[17.805529] (-) TimerEvent: {}
+[17.905909] (-) TimerEvent: {}
+[18.006335] (-) TimerEvent: {}
+[18.106694] (-) TimerEvent: {}
+[18.207130] (-) TimerEvent: {}
+[18.307557] (-) TimerEvent: {}
+[18.408065] (-) TimerEvent: {}
+[18.508519] (-) TimerEvent: {}
+[18.608973] (-) TimerEvent: {}
+[18.709464] (-) TimerEvent: {}
+[18.809989] (-) TimerEvent: {}
+[18.910394] (-) TimerEvent: {}
+[19.010799] (-) TimerEvent: {}
+[19.111203] (-) TimerEvent: {}
+[19.211628] (-) TimerEvent: {}
+[19.312149] (-) TimerEvent: {}
+[19.412601] (-) TimerEvent: {}
+[19.513013] (-) TimerEvent: {}
+[19.613460] (-) TimerEvent: {}
+[19.713823] (-) TimerEvent: {}
+[19.814282] (-) TimerEvent: {}
+[19.914691] (-) TimerEvent: {}
+[20.015118] (-) TimerEvent: {}
+[20.015575] (talker_node) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable server_node\x1b[0m\n'}
+[20.115228] (-) TimerEvent: {}
+[20.215606] (-) TimerEvent: {}
+[20.243963] (talker_node) StdoutLine: {'line': b'[100%] Built target server_node\n'}
+[20.263386] (talker_node) CommandEnded: {'returncode': 0}
+[20.264837] (talker_node) JobProgress: {'identifier': 'talker_node', 'progress': 'install'}
+[20.265717] (talker_node) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node'], 'cwd': '/root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'HOSTNAME': 'a850ecd96ef8', 'GIT_ASKPASS': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root/ros2course', 'TERM_PROGRAM_VERSION': '1.105.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-09c6d427-bf71-4b5a-a62c-051321ecb2d5.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-2488fd0c-9d4d-45a4-9576-4bff0a40a7f7.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts', 'REMOTE_CONTAINERS_SOCKETS': '[]', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/root/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-854fea334dd6928c.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/89e1c946ca2914fc5cb0017200c1cef1/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-3ff268001c.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros2course/ch2-3-make-the-nodes-talk/build/talker_node', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package/lib/python3.12/site-packages:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/ros2course/ch2-3-make-the-nodes-talk/install/msg_package:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-cmake:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/root/ros2course/ch2-1-creating-nodes/ros2-node-test-workspace/install/ros2-sample-package-python:/opt/ros/jazzy'}), 'shell': False}
+[20.283148] (talker_node) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.283739] (talker_node) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[20.286187] (talker_node) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/lib/talker_node/server_node\n'}
+[20.304331] (talker_node) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/ament_index/resource_index/package_run_dependencies/talker_node\n'}
+[20.315785] (-) TimerEvent: {}
+[20.320285] (talker_node) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/ament_index/resource_index/parent_prefix_path/talker_node\n'}
+[20.341972] (talker_node) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/environment/ament_prefix_path.sh\n'}
+[20.357035] (talker_node) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/environment/ament_prefix_path.dsv\n'}
+[20.373854] (talker_node) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/environment/path.sh\n'}
+[20.389510] (talker_node) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/environment/path.dsv\n'}
+[20.405676] (talker_node) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/local_setup.bash\n'}
+[20.416015] (-) TimerEvent: {}
+[20.421062] (talker_node) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/local_setup.sh\n'}
+[20.440780] (talker_node) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/local_setup.zsh\n'}
+[20.456803] (talker_node) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/local_setup.dsv\n'}
+[20.475228] (talker_node) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/package.dsv\n'}
+[20.494406] (talker_node) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/ament_index/resource_index/packages/talker_node\n'}
+[20.512078] (talker_node) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/cmake/talker_nodeConfig.cmake\n'}
+[20.516157] (-) TimerEvent: {}
+[20.530178] (talker_node) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/cmake/talker_nodeConfig-version.cmake\n'}
+[20.548696] (talker_node) StdoutLine: {'line': b'-- Symlinking: /root/ros2course/ch2-3-make-the-nodes-talk/install/talker_node/share/talker_node/package.xml\n'}
+[20.569211] (talker_node) CommandEnded: {'returncode': 0}
+[20.600239] (talker_node) JobEnded: {'identifier': 'talker_node', 'rc': 0}
+[20.602254] (-) EventReactorShutdown: {}
